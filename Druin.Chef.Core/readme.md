@@ -19,7 +19,7 @@ var conn = new ChefConnection()
 
 var request = Requester.GetRequestAsync(conn, "/organizations/test/roles");
 
-/// The Requesting methods are Async.  Some of these upload/ downloads take so time.
+/// The Requesting methods are Async.  Some of these upload/ downloads take some time.
 
 Console.Write(request.Result.Content.ReadAsStringAsync().Result);
 
