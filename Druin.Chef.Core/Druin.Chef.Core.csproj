@@ -46,9 +46,11 @@
     <Compile Include="Authentication\AuthenticatedRequest.cs" />
     <Compile Include="Authentication\ChefConnection.cs" />
     <Compile Include="Authentication\Digester.cs" />
+    <Compile Include="Authentication\IChefConnection.cs" />
     <Compile Include="Helpers\FileHelpers.cs" />
     <Compile Include="Helpers\StringHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\IRequester.cs" />
     <Compile Include="Requests\Requester.cs" />
     <Compile Include="Requests\RequestAgent.cs" />
   </ItemGroup>
