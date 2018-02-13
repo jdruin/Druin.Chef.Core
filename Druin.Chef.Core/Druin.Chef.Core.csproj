@@ -47,6 +47,7 @@
     <Compile Include="Authentication\ChefConnection.cs" />
     <Compile Include="Authentication\Digester.cs" />
     <Compile Include="Authentication\IChefConnection.cs" />
+    <Compile Include="Exceptions\ChefException.cs" />
     <Compile Include="Helpers\FileHelpers.cs" />
     <Compile Include="Helpers\StringHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
