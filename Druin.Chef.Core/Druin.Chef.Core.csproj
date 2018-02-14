@@ -47,7 +47,13 @@
     <Compile Include="Authentication\ChefConnection.cs" />
     <Compile Include="Authentication\Digester.cs" />
     <Compile Include="Authentication\IChefConnection.cs" />
-    <Compile Include="Exceptions\ChefException.cs" />
+    <Compile Include="Exceptions\ChefConflictException.cs" />
+    <Compile Include="Exceptions\ChefExceptionBuilder.cs" />
+    <Compile Include="Exceptions\ChefForbiddenException.cs" />
+    <Compile Include="Exceptions\ChefGoneException.cs" />
+    <Compile Include="Exceptions\ChefNotFoundException.cs" />
+    <Compile Include="Exceptions\ChefTooLargeException.cs" />
+    <Compile Include="Exceptions\ChefUnauthorizedException.cs" />
     <Compile Include="Helpers\FileHelpers.cs" />
     <Compile Include="Helpers\StringHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
