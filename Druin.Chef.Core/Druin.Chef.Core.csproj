@@ -48,6 +48,7 @@
     <Compile Include="Authentication\Digester.cs" />
     <Compile Include="Authentication\IChefConnection.cs" />
     <Compile Include="Exceptions\ChefConflictException.cs" />
+    <Compile Include="Exceptions\ChefException.cs" />
     <Compile Include="Exceptions\ChefExceptionBuilder.cs" />
     <Compile Include="Exceptions\ChefForbiddenException.cs" />
     <Compile Include="Exceptions\ChefGoneException.cs" />
