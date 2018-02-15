@@ -15,9 +15,12 @@ var conn = new ChefConnection()
                 PrivateKey = privateKey,
                 UserId = userId,
                 ChefServer = "https://api.opscode.com:443"
-            };
+            }
 
-var request = Requester.GetRequestAsync(conn, "/organizations/test/roles");
+
+var request = new Requester(conn);
+
+var request = Requester.GetRequestAsync("/organizations/test/roles");
 
 /// The Requesting methods are Async.  Some of these upload/ downloads take some time.
 
