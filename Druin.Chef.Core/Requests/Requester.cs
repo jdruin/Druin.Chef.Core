@@ -97,5 +97,10 @@ namespace Druin.Chef.Core.Requests
 
             return resultContent;
         }
+
+        public IChefConnection GetChefConnection()
+        {
+            return connectionInfo;
+        }
     }
 }

@@ -6,6 +6,7 @@ namespace Druin.Chef.Core.Requests
 {
     public interface IRequester
     {
+        IChefConnection GetChefConnection();
         Task<HttpResponseMessage> DeleteRequestAsync(string endPoint, string parameter = "");
         Task<HttpResponseMessage> GetRequestAsync(string endPoint, string parameter = "");
         Task<HttpResponseMessage> MakeRequestAsync(IChefConnection connectionInfo, string endPoint, HttpMethod method, byte[] file, string checksum, string parameter);
