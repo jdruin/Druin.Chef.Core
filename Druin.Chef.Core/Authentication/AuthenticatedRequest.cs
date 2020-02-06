@@ -58,13 +58,13 @@ namespace Druin.Chef.Core.Authentication
             byte[] input = Encoding.UTF8.GetBytes(canonicalHeader);
 
             var pemReader = new PemReader(new StringReader(privateKey));
-            AsymmetricKeyParameter key = ((AsymmetricCipherKeyPair)pemReader.ReadObject()).Private;
+            var keyPair = (AsymmetricCipherKeyPair)pemReader.ReadObject();
 
-            ISigner signer = new RsaDigestSigner(new NullDigest());
-            signer.Init(true, key);
-            signer.BlockUpdate(input, 0, input.Length);
+            var pkcs1Encoding = new Pkcs1Encoding(new RsaBlindedEngine());
+            pkcs1Encoding.Init(true, keyPair.Private);
+            var signer = pkcs1Encoding.ProcessBlock(input, 0, input.Length);
 
-            signature = Convert.ToBase64String(signer.GenerateSignature());
+            signature = Convert.ToBase64String(signer);
         }
 
         public HttpRequestMessage Create()
