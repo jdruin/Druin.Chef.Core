@@ -1,4 +1,4 @@
-﻿# Druin.Chef.Core
+﻿﻿# Druin.Chef.Core
 
 This is an update to the code maintained at https://github.com/lholman/dotnet-chef-api by Lloyd Holman.
 

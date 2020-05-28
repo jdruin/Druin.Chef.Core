@@ -1,5 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Digests;
+using Org.BouncyCastle.Crypto.Encodings;
+using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Signers;
 using Org.BouncyCastle.OpenSsl;
 using System;
@@ -18,7 +20,7 @@ namespace Druin.Chef.Core.Authentication
         private readonly HttpMethod method;
         private readonly string body;
         private readonly byte[] file;
-        
+
 
         private readonly string timestamp = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
         private string signature = String.Empty;

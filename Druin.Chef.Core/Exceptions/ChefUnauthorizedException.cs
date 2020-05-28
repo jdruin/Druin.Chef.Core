@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Druin.Chef.Core.Exceptions
 {
@@ -12,7 +9,7 @@ namespace Druin.Chef.Core.Exceptions
         { }
 
         public ChefUnauthorizedException(string message) : base(message)
-        {}
+        { }
 
         public ChefUnauthorizedException(string message, Exception inner) : base(message, inner)
         { }

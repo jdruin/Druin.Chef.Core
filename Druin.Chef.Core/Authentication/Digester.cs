@@ -36,6 +36,6 @@ namespace Druin.Chef.Core.Authentication
             }
         }
 
-        
+
     }
 }
